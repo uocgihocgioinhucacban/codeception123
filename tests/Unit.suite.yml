@@ -1,0 +1,16 @@
+# unit.suite.yml
+actor: UnitTester
+modules:
+    enabled:
+        - Asserts
+        - Db
+    config:
+        Db:
+            dsn: 'mysql:host=127.0.0.1;dbname=php8;port=3306'
+            user: 'root'
+            password: ''
+            populate: true
+            cleanup: true
+            reconnect: true
+            waitlock: 10
+            populator: 'mysql --user=$user --password=$password --host=$host --database=$dbname'

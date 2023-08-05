@@ -1,0 +1,8 @@
+
+actor: AcceptanceTester
+modules:
+    enabled:
+        - PhpBrowser:
+            url: 'http://178.128.88.120:88/login'
+
+
